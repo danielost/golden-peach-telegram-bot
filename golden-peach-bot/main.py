@@ -51,8 +51,8 @@ def on_start():
 @dp.message_handler(commands=['start', 'help'])
 async def start_command(message: types.Message):
     await bot.send_message(message.from_user.id,
-                           '*Hello there!* 👋\n\nThis bot was designed to give you info about all the cryptocurrencies you need.\n\n'
-                           'To start using *CryptoAssist* type /menu or hit the corresponding button on the keyboard.' \
+                           '*Hello there!* 👋\n\n'
+                           'To start using *Golden Peach* type /menu or hit the corresponding button on the keyboard.' \
                            , parse_mode='Markdown', reply_markup=static_kb)
 
 
